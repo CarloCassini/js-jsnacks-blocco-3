@@ -49,6 +49,7 @@ myButton3.addEventListener("click", function () {
   let ex3numero = 0;
   let ex3somma = 0;
   let ex3sommacheck = false;
+
   while (!ex3sommacheck) {
     ex3numero = parseInt(prompt("inserisci un elemento"));
     ex3somma = ex3somma + ex3numero;
@@ -71,9 +72,28 @@ myButton3.addEventListener("click", function () {
 let myButton4 = document.getElementById("esercizio-4");
 
 myButton4.addEventListener("click", function () {
-  let ex4output = "ex4";
+  let ex4array = [];
+  let ex4numero = 0;
+  let ex4somma = 0;
+  let ex4sommacheck = false;
+
+  while (!ex4sommacheck) {
+    ex4numero = parseInt(prompt("inserisci un elemento"));
+    ex4somma = ex4somma + ex4numero;
+    ex4array.push(ex4numero);
+
+    if (ex4somma < 50) {
+    } else {
+      ex4sommacheck = true;
+    }
+  }
+
+  let ex4output = ex4array;
 
   console.log(ex4output);
+  let ex4media = ex4somma / ex4array.length;
+  console.log(ex4somma);
+  console.log(ex4media);
 });
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++
