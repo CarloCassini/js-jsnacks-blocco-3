@@ -89,9 +89,17 @@ myButton4.addEventListener("click", function () {
 let myButton5 = document.getElementById("esercizio-5");
 
 myButton5.addEventListener("click", function () {
-  let ex5output = "ex5";
+  let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+  let evenNumbers = [];
+  for (let i = 0; i < numbers.length - 1; i++) {
+    console.log(numbers[i]);
+    if (parseInt(numbers[i]) % 2 == 0) {
+      evenNumbers.push(i);
+    }
+  }
+  console.log(evenNumbers);
 
-  console.log(ex5output);
+  // dovrebbe restituire [1,3,5]
 });
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++
