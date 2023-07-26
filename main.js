@@ -48,17 +48,11 @@ myButton3.addEventListener("click", function () {
   let ex3array = [];
   let ex3numero = 0;
   let ex3somma = 0;
-  let ex3sommacheck = false;
 
-  while (!ex3sommacheck) {
+  while (ex3somma < 50) {
     ex3numero = parseInt(prompt("inserisci un elemento"));
     ex3somma = ex3somma + ex3numero;
     ex3array.push(ex3numero);
-
-    if (ex3somma < 50) {
-    } else {
-      ex3sommacheck = true;
-    }
   }
 
   let ex3output = ex3array;
@@ -75,17 +69,11 @@ myButton4.addEventListener("click", function () {
   let ex4array = [];
   let ex4numero = 0;
   let ex4somma = 0;
-  let ex4sommacheck = false;
 
-  while (!ex4sommacheck) {
+  while (ex4somma < 50) {
     ex4numero = parseInt(prompt("inserisci un elemento"));
     ex4somma = ex4somma + ex4numero;
     ex4array.push(ex4numero);
-
-    if (ex4somma < 50) {
-    } else {
-      ex4sommacheck = true;
-    }
   }
 
   let ex4output = ex4array;
