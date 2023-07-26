@@ -45,9 +45,15 @@ myButton2.addEventListener("click", function () {
 let myButton3 = document.getElementById("esercizio-3");
 
 myButton3.addEventListener("click", function () {
-  let ex3output = "ex3";
+  let ex3array = [];
+  while (ex3array.length < 10) {
+    ex3array.push(prompt("inserisci un elemento"));
+  }
+
+  let ex3output = ex3array;
 
   console.log(ex3output);
+  console.log(ex3output.length);
 });
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++
