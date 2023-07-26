@@ -46,14 +46,24 @@ let myButton3 = document.getElementById("esercizio-3");
 
 myButton3.addEventListener("click", function () {
   let ex3array = [];
-  while (ex3array.length < 10) {
-    ex3array.push(prompt("inserisci un elemento"));
+  let ex3numero = 0;
+  let ex3somma = 0;
+  let ex3sommacheck = false;
+  while (!ex3sommacheck) {
+    ex3numero = parseInt(prompt("inserisci un elemento"));
+    ex3somma = ex3somma + ex3numero;
+    ex3array.push(ex3numero);
+
+    if (ex3somma < 50) {
+    } else {
+      ex3sommacheck = true;
+    }
   }
 
   let ex3output = ex3array;
 
   console.log(ex3output);
-  console.log(ex3output.length);
+  console.log(ex3somma);
 });
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++
